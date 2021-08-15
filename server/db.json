@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Red Bull",
+      "caffeineContent": "80mg",
+      "description": "The Gold Standard of All Liquid-Based Things"
+    },
+    {
+      "id": 2,
+      "name": "Bang",
+      "caffeineContent": "300mg",
+      "description": "Tastes Awful and Will Give a Heart Attack - Gym Bros Like This"
+    },
+    {
+      "id": 3,
+      "name": "Rockstar",
+      "caffeineContent": "120mg",
+      "description": "Mehhh"
+    },
+    {
+      "id": 4,
+      "name": "Sugar Free Monster (White Can)",
+      "caffeineContent": "200mg",
+      "description": "Commonly Purchased Alongside Cigarettes by Tradesmen"
+    }
+  ]
+}

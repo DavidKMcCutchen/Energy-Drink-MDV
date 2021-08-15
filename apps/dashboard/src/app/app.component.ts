@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Message } from '@energy-drink/api-interfaces';
 
 @Component({
   selector: 'energy-drink-root',
@@ -8,6 +6,9 @@ import { Message } from '@energy-drink/api-interfaces';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
-  constructor(private http: HttpClient) {}
+  title= 'Products';
+  links= [
+    {path: '', icon: 'home', title: 'Home'},
+    {path: 'products', icon: 'view_list', title: 'Products'}
+  ]
 }

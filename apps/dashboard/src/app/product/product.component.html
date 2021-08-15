@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="col-50" layout="row" layout-align="center center">
+    <energy-drink-product-list
+      [products]="allProducts$ | async"
+      (selected)="selectProduct($event)"
+      (deleted)="deleteProduct($event)"
+    ></energy-drink-product-list>
+  </div>
+  <div class="col-50" layout="row" layout-align="center center">
+    <energy-drink-product-details
+      [product]="selectedProduct$ | async"
+      (saved)="saveProduct($event)"
+      (cancelled)="cancel()"
+      [form]="form"
+    ></energy-drink-product-details>
+  </div>
+</div>
